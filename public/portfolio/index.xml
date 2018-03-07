@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on OS: A selection of projects</title>
+    <link>https://example.org/portfolio/</link>
+    <description>Recent content in Portfolios on OS: A selection of projects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Kunst Kernewek</copyright>
+    <lastBuildDate>Wed, 21 Feb 2018 14:41:01 +0530</lastBuildDate>
+    
+	<atom:link href="https://example.org/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Great Filter</title>
+      <link>https://example.org/portfolio/14-sticks/</link>
+      <pubDate>Wed, 21 Feb 2018 14:41:01 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/14-sticks/</guid>
+      <description>&lt;p&gt;Ten algorithmic sound programs for live software performance based on electro-funk technology and inspired by the Great Filter.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trade Secrets: studies and sketches (including Grading by Medium Dave)</title>
+      <link>https://example.org/portfolio/trade-secrets/</link>
+      <pubDate>Wed, 20 Sep 2017 19:41:01 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/trade-secrets/</guid>
+      <description>&lt;p&gt;Trade Secrets: studies and sketches is a collection of source materials and curated collaboration with popular recommendation engines and everyday internet algorithms.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grading by Medium Dave</title>
+      <link>https://example.org/portfolio/grading/</link>
+      <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/grading/</guid>
+      <description>https://mediumdave.tumblr.com/</description>
+    </item>
+    
+    <item>
+      <title>Beekeeping, hypnosis and the internet.</title>
+      <link>https://example.org/portfolio/the-internet/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/the-internet/</guid>
+      <description>&lt;p&gt;A presentation conceived by Andrew Palmer during his residency at Zennor Project Space in collaboration with Jonty Lees and Oliver Scott.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notes on Falling</title>
+      <link>https://example.org/portfolio/falling/</link>
+      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/falling/</guid>
+      <description>&lt;p&gt;Intention &amp;gt; Accident &amp;gt; Fear &amp;gt; Surprise &amp;gt; Realisation &amp;gt; Purpose&lt;/p&gt;
+
+&lt;p&gt;Driven by excitement + guided by discernment
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>◣.com</title>
+      <link>https://example.org/portfolio/down/</link>
+      <pubDate>Sat, 05 Nov 2016 19:56:17 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/down/</guid>
+      <description>&lt;p&gt;Full description in link below
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>This way Tipler</title>
+      <link>https://example.org/portfolio/tipler/</link>
+      <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/tipler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[inept-09]</title>
+      <link>https://example.org/portfolio/inept-09/</link>
+      <pubDate>Sat, 05 Nov 2016 19:59:22 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/inept-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Inept-08]</title>
+      <link>https://example.org/portfolio/inept-08/</link>
+      <pubDate>Sat, 05 Nov 2016 20:02:19 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/inept-08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Do not expect consistency</title>
+      <link>https://example.org/portfolio/inept-06/</link>
+      <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/inept-06/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Inept-05]</title>
+      <link>https://example.org/portfolio/inept-05/</link>
+      <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/inept-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inept-1315</title>
+      <link>https://example.org/portfolio/inept-1315/</link>
+      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      
+      <guid>https://example.org/portfolio/inept-1315/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

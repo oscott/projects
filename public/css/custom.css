@@ -1,0 +1,13 @@
+/* your styles go here */
+td {
+    padding: 5px;
+    border: #ddd 1px solid;
+    vertical-align: top;
+  }
+td:contains("tipler"){
+  color: green;
+}
+.copyright {
+  position: fixed;
+  bottom: 0;
+}
