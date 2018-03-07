@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get in touch on OS: A selection of projects</title>
-    <link>https://example.org/contact/</link>
+    <link>https://oscott.github.io/projects/contact/</link>
     <description>Recent content in Get in touch on OS: A selection of projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Kunst Kernewek</copyright>
     <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate>
     
-	<atom:link href="https://example.org/contact/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://oscott.github.io/projects/contact/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
