@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on OS: A selection of projects</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on OS: A selection of projects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Kunst Kernewek</copyright>
+    
+	<atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://example.org/posts/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/posts/portfolio/</guid>
+      <description>฿elieve.md down.md
+   year md info     2017? trade-secrets.md The latest is in the outer layer of the audio from the recent exhibition of his studies for the ? ? ? (unchained melody)   2017 the-internet.md Beekeeping, hypnosis and the internet. Prez   2017? grading.md There has also been some bootlegs of the Studies for Grading by Medium Dave. We managed to get a copy and have reproduced this with permission from Oliver.</description>
+    </item>
+    
+  </channel>
+</rss>
