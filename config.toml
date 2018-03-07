@@ -1,5 +1,5 @@
 baseurl = "https://example.org/"
-title = "Some projects"
+title = "OS: A selection of projects"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -12,43 +12,42 @@ googleAnalytics = ""
   # Use custom.css for your custom styling
   style = "default"
   description = "Oliver Scott: A selection of projects"
-  copyright = "&copy; 2017 Oliver Scott"
+  copyright = "&copy; 2017 Kunst Kernewek"
   sidebarAbout = [
-    "I am an artist using sound and internet.",
-    "Originally from Falmouth, currently based in Penryn."
+    "A selection of sound and internet work by Oliver Scott. Descriptions are currently brief, more info to come -  further information on request"
   ]
   # Contact page
-     # Since this template is static, the contact form uses www.formspree.io as a
-     # proxy. The form makes a POST request to their servers to send the actual
-     # email. Visitors can send up to a 1000 emails each month for free.
-     #
-     # What you need to do for the setup?
-     #
-     # - set your email address under 'email' below
-     # - upload the generated site to your server
-     # - send a dummy email yourself to confirm your account
-     # - click the confirm link in the email from www.formspree.io
-     # - you're done. Happy mailing!
+  #    Since this template is static, the contact form uses www.formspree.io as a
+  #    proxy. The form makes a POST request to their servers to send the actual
+  #    email. Visitors can send up to a 1000 emails each month for free.
+  #
+  #    What you need to do for the setup?
+  #
+  #    - set your email address under 'email' below
+  #    - upload the generated site to your server
+  #    - send a dummy email yourself to confirm your account
+  #    - click the confirm link in the email from www.formspree.io
+  #    - you're done. Happy mailing!
   email = "os@koept.net"
 
-  # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Home"
-  url = ""
-
-  [[params.navlinks]]
-  name = "About"
-  url = "about/"
-
-  [[params.navlinks]]
-  name = "Get in touch"
-  url = "contact/"
-
-  [params.social]
-  googleplus    = "full profile url in googleplus"
-  email         = "os@koept.net"
-  twitter       = "full profile url in twitter"
-  linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  instagram     = "full profile url in instagram"
-  github        = "full profile url in github"
+  # # Nav links in the side bar
+  # [[params.navlinks]]
+  # name = "Home"
+  # url = ""
+  #
+  # [[params.navlinks]]
+  # name = "About"
+  # url = "about/"
+  #
+  # [[params.navlinks]]
+  # name = "Get in touch"
+  # url = "contact/"
+  #
+  # [params.social]
+  # googleplus    = "full profile url in googleplus"
+  # email         = "os@koept.net"
+  # twitter       = "full profile url in twitter"
+  # linkedin      = "full profile url in linkedin"
+  # stackoverflow = "full profile url in stackoverflow"
+  # instagram     = "https://www.instagram.com/oscott"
+  # github        = "full profile url in github"

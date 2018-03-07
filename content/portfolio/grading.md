@@ -6,3 +6,5 @@ title = "Grading by Medium Dave"
 draft = false
 weight = 2
 +++
+
+https://mediumdave.tumblr.com/
