@@ -10,7 +10,7 @@ weight = 1
 Trade Secrets: studies and sketches is a collection of source materials and curated collaboration with popular recommendation engines and everyday internet algorithms.
 <!--more-->
 
-By abstracting artist’s personal data, his everyday behaviour on the internet has been classified as “unpredictable” by Google. Presented work will reveal this process and the way it affects artist’s relationship with the technology and with his own data, generating a story of identity being traded in exchange for an enhanced interface to the internet.
+By abstracting artist’s personal data, his everyday behaviour on the internet has been classified as “unpredictable” by Google. The presented work reveals this process and the way it affects the artist’s relationship with technology and with his own data, generating a story of identity being traded in exchange for an enhanced interface to the internet.
 
 There are 3 elements to the work.
 
@@ -18,8 +18,8 @@ There are 3 elements to the work.
 2. Headphones channel A - Unchained melody (duration: 28 minutes)
 3. Headphones channel B - The internet read by David (duration: 18 minutes)
 
-> The visualisation is really just a trick to distract your attention from the sound.
+<!-- > The visualisation is really just a trick to distract your attention from the sound.
 
 ## Grading by Medium Dave
 
-Grading by Medium Dave is a collection of 24 films. They are not displayed on a mobile phone beside the TFT digital display.
+Grading by Medium Dave is a collection of 24 films. They are not displayed on a mobile phone beside the TFT digital display. -->

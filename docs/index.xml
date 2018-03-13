@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OS: A selection of projects</title>
+    <title>Oliver Scott: A selection of projects</title>
     <link>https://oscott.github.io/projects/</link>
-    <description>Recent content on OS: A selection of projects</description>
+    <description>Recent content on Oliver Scott: A selection of projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Kunst Kernewek</copyright>
+    <copyright>&amp;copy; 2018 Kunst Kernewek</copyright>
     <lastBuildDate>Wed, 21 Feb 2018 14:41:01 +0530</lastBuildDate>
     
 	<atom:link href="https://oscott.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,7 @@
       <pubDate>Wed, 21 Feb 2018 14:41:01 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/14-sticks/</guid>
-      <description>&lt;p&gt;Ten algorithmic sound programs for live software performance based on electro-funk technology and inspired by the Great Filter.&lt;/p&gt;
+      <description>&lt;p&gt;Ten algorithmic sound programs for live software performance based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Electro_(music)&#34;&gt;electro-funk technology&lt;/a&gt; and inspired by the &lt;a href=&#34;https://en.wikipedia.org/wiki/Great_Filter&#34;&gt;Great Filter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -48,7 +48,7 @@
       <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/the-internet/</guid>
-      <description>&lt;p&gt;A presentation conceived by Andrew Palmer during his residency at Zennor Project Space in collaboration with Jonty Lees and Oliver Scott.
+      <description>&lt;p&gt;A presentation at CAST conceived by Andrew Palmer during his residency at Zennor Project Space in collaboration with Jonty Lees and Oliver Scott.
 &lt;/p&gt;</description>
     </item>
     
@@ -89,7 +89,7 @@
       <pubDate>Sat, 05 Nov 2016 19:59:22 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-09/</guid>
-      <description></description>
+      <description>info to follow</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-06/</guid>
-      <description></description>
+      <description>info to follow</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@
       <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-05/</guid>
-      <description></description>
+      <description>info to follow</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-1315/</guid>
-      <description></description>
+      <description>info to follow</description>
     </item>
     
     <item>

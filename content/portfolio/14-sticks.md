@@ -7,7 +7,7 @@ showonlyimage = false
 weight = 1
 +++
 
-Ten algorithmic sound programs for live software performance based on electro-funk technology and inspired by the Great Filter.
+Ten algorithmic sound programs for live software performance based on [electro-funk technology](https://en.wikipedia.org/wiki/Electro_(music)) and inspired by the [Great Filter](https://en.wikipedia.org/wiki/Great_Filter).
 
 <!--more-->
 
@@ -25,11 +25,11 @@ Ten algorithmic sound programs for live software performance based on electro-fu
 10. mount 									    6:53 -->
 
 
-First edition of fourteen sticks sunk into cork for sale at the following events:   
+Version one was captured onto fourteen sticks and sunk into cork for sale at the following events:   
 
 [Cardiff](https://www.facebook.com/events/179149349497348/)  
 [London](https://www.facebook.com/events/1775712846066069/)  
 
 <!-- ⓒ kunst kernewek early Twenty Eighteen  	 -->
 
-Follow @koe.pt on instagram for more info
+Follow [@koe.pt](https://www.instagram.com/koe.pt/) on instagram for more info

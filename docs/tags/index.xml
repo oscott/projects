@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on OS: A selection of projects</title>
+    <title>Tags on Oliver Scott: A selection of projects</title>
     <link>https://oscott.github.io/projects/tags/</link>
-    <description>Recent content in Tags on OS: A selection of projects</description>
+    <description>Recent content in Tags on Oliver Scott: A selection of projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Kunst Kernewek</copyright>
+    <copyright>&amp;copy; 2018 Kunst Kernewek</copyright>
     
 	<atom:link href="https://oscott.github.io/projects/tags/index.xml" rel="self" type="application/rss+xml" />
     

@@ -6,3 +6,4 @@ date = "2016-11-05T20:23:59+05:30"
 title = "[Inept-05]"
 weight = 11
 +++
+info to follow
