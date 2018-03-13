@@ -6,7 +6,7 @@ image = "https://68.media.tumblr.com/b0f94d87cbab7e1174d6086630803b2c/tumblr_ow9
 showonlyimage = false
 weight = 1
 +++
-
+<!--more-->
 Trade Secrets: studies and sketches is a collection of source materials and curated collaboration with popular recommendation engines and everyday internet algorithms.
 
 

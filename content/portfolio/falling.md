@@ -6,7 +6,7 @@ date = "2016-11-05T19:50:47+05:30"
 title = "Notes on Falling"
 weight = 4
 +++
-
+<!--more-->
 Intention > Accident > Fear > Surprise > Realisation > Purpose
 
 Driven by excitement + guided by discernment

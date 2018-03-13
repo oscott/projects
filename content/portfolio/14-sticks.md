@@ -6,7 +6,7 @@ image = "https://scontent-lht6-1.cdninstagram.com/vp/f4538869775513df0d0df69d773
 showonlyimage = false
 weight = 1
 +++
-
+<!--more-->
 Ten algorithmic sound programs for live software performance based on [electro-funk technology](https://en.wikipedia.org/wiki/Electro_(music)) and inspired by the [Great Filter](https://en.wikipedia.org/wiki/Great_Filter).
 
 
