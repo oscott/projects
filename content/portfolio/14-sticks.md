@@ -9,7 +9,7 @@ weight = 1
 
 Ten algorithmic sound programs for live software performance based on [electro-funk technology](https://en.wikipedia.org/wiki/Electro_(music)) and inspired by the [Great Filter](https://en.wikipedia.org/wiki/Great_Filter).
 
-<!--more-->
+
 
 ![14 Sticks](https://scontent-lht6-1.cdninstagram.com/vp/f4538869775513df0d0df69d773f0d1f/5B4D78B8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg "14 sticks")
 

@@ -10,7 +10,7 @@ weight = 4
 Intention > Accident > Fear > Surprise > Realisation > Purpose
 
 Driven by excitement + guided by discernment
-<!--more-->
+
 
 1. You may need to get more or less sleep.
 2. Eat higher vibrational foods that are live and fresh.

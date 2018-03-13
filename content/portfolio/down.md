@@ -8,6 +8,6 @@ weight = 6
 +++
 
 Full description in link below
-<!--more-->
+
 
 # [◣.com](http://◣.com)

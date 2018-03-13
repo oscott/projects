@@ -8,4 +8,3 @@ weight = 2
 +++
 
 A presentation at CAST conceived by Andrew Palmer during his residency at Zennor Project Space in collaboration with Jonty Lees and Oliver Scott.
-<!--more-->
