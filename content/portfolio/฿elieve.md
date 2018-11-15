@@ -1,5 +1,5 @@
 +++
-image = ""
+image = "img/bleave.png"
 showonlyimage = false
 draft = true
 date = "2016-11-05T19:53:42+05:30"

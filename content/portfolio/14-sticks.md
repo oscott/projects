@@ -7,13 +7,19 @@ showonlyimage = false
 weight = 1
 +++
 <!--more-->
+
+### Version one
+
 Ten algorithmic sound programs for live software performance based on [electro-funk technology](https://en.wikipedia.org/wiki/Electro_(music)) and inspired by the [Great Filter](https://en.wikipedia.org/wiki/Great_Filter).
 
 
 
 ![14 Sticks](https://scontent-lht6-1.cdninstagram.com/vp/f4538869775513df0d0df69d773f0d1f/5B4D78B8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg "14 sticks")
 
-<!-- 1. rare earth hypothesis 						    6:24
+### contents
+
+
+1. rare earth hypothesis 						    6:24
 2. nwn 										    2:07
 3. shake a stick								    6:30
 4. biscostate 6 								    3:09
@@ -22,8 +28,8 @@ Ten algorithmic sound programs for live software performance based on [electro-f
 7. virtual intelligong 							    0:52
 8. emulation									    3:16
 9. the dog lounge 								    2:32
-10. mount 									    6:53 -->
-
+10. mount 									    6:53
+11. Side B length variable
 
 Version one was captured onto fourteen sticks and sunk into cork for sale at the following events:   
 
