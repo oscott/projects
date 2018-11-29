@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oliver Scott: A selection of projects</title>
+    <title>OS: A selection of projects</title>
     <link>https://oscott.github.io/projects/</link>
-    <description>Recent content on Oliver Scott: A selection of projects</description>
+    <description>Recent content on OS: A selection of projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Kunst Kernewek</copyright>
@@ -18,7 +18,16 @@
       <pubDate>Wed, 21 Feb 2018 14:41:01 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/14-sticks/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Corrupting DATA</title>
+      <link>https://oscott.github.io/projects/portfolio/crptngdata/</link>
+      <pubDate>Mon, 20 Nov 2017 19:41:01 +0530</pubDate>
+      
+      <guid>https://oscott.github.io/projects/portfolio/crptngdata/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -81,7 +90,7 @@
       <pubDate>Sat, 05 Nov 2016 19:59:22 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-09/</guid>
-      <description>info to follow</description>
+      <description>A record in an unfinished screen-printed canvas sleeve with finishing kit. The kit includes instructions, stretcher and gallery/auction website. Limited to 100</description>
     </item>
     
     <item>
@@ -90,7 +99,7 @@
       <pubDate>Sat, 05 Nov 2016 20:02:19 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-08/</guid>
-      <description></description>
+      <description>Deleted</description>
     </item>
     
     <item>
@@ -99,7 +108,7 @@
       <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-06/</guid>
-      <description>info to follow</description>
+      <description>Super edition flimsy vinyl with no visual track markers and labels on the wrong sides.</description>
     </item>
     
     <item>
@@ -108,7 +117,7 @@
       <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/inept-05/</guid>
-      <description>info to follow</description>
+      <description>Vinyl e.p. recording buried in the Cornish underground - 50°08&amp;rsquo;54.0&amp;rdquo;N 5°08&amp;rsquo;45.0&amp;rdquo;W.</description>
     </item>
     
     <item>
