@@ -2,7 +2,7 @@
 date = "2018-02-21T14:41:01+05:30"
 title = "The Great Filter"
 draft = false
-image = "https://scontent-lht6-1.cdninstagram.com/vp/f4538869775513df0d0df69d773f0d1f/5B4D78B8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg"
+image = "https://instagram.fbrs1-1.fna.fbcdn.net/vp/2a409da8c105db9b596e53086e9a97f6/5CB16DB8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg"
 showonlyimage = false
 weight = 1
 +++
@@ -14,7 +14,7 @@ Ten algorithmic sound programs for live software performance based on [electro-f
 
 
 
-![14 Sticks](https://scontent-lht6-1.cdninstagram.com/vp/f4538869775513df0d0df69d773f0d1f/5B4D78B8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg "14 sticks")
+![14 Sticks](https://instagram.fbrs1-1.fna.fbcdn.net/vp/2a409da8c105db9b596e53086e9a97f6/5CB16DB8/t51.2885-15/e35/27879035_590892871247666_5050986199859068928_n.jpg "14 sticks")
 
 ### contents
 

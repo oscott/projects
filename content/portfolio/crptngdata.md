@@ -15,6 +15,8 @@ Title: Corrupting Data featuring ϟℙ∀ℳℳ▁ℙϴШ€ℜ
 Date: 23 Sep - 4 November 2017  
 Artists: Rosa Menkman, Mario Klingemann, Gillian Wylde, Oliver Scott, Sam Hains  
 Curator: Magda Tyżlik-Carver  
-Where: Falmouth Art Gallery | Falmouth
+Location: Falmouth Art Gallery | Falmouth, UK.
 
 https://crptngdata.tumblr.com/
+
+Exhibition of Trade Secrets

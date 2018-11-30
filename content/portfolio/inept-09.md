@@ -6,4 +6,5 @@ date = "2016-11-05T19:59:22+05:30"
 title = "[inept-09]"
 weight = 8
 +++
-info to follow
+A record in an unfinished screen-printed canvas sleeve with finishing kit. The kit includes instructions, stretcher and gallery/auction website.
+Limited to 100

@@ -6,4 +6,4 @@ date = "2016-11-05T20:23:59+05:30"
 title = "[Inept-05]"
 weight = 11
 +++
-info to follow
+Vinyl e.p. recording buried in the Cornish underground - 50°08'54.0"N 5°08'45.0"W. 

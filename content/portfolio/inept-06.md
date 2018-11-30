@@ -6,4 +6,4 @@ date = "2016-11-05T20:22:08+05:30"
 title = "Do not expect consistency"
 weight = 10
 +++
-info to follow
+Super edition flimsy vinyl with no visual track markers and labels on the wrong sides.
