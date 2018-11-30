@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolios on OS: A selection of projects</title>
+    <title>Portfolios on A Message:</title>
     <link>https://oscott.github.io/projects/portfolio/</link>
-    <description>Recent content in Portfolios on OS: A selection of projects</description>
+    <description>Recent content in Portfolios on A Message:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Kunst Kernewek</copyright>
+    <copyright>&amp;copy; Kunst Kernewek 999-019</copyright>
     <lastBuildDate>Wed, 21 Feb 2018 14:41:01 +0530</lastBuildDate>
     
 	<atom:link href="https://oscott.github.io/projects/portfolio/index.xml" rel="self" type="application/rss+xml" />
@@ -45,7 +45,7 @@
       <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/grading/</guid>
-      <description>https://mediumdave.tumblr.com/</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@
       <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
       
       <guid>https://oscott.github.io/projects/portfolio/falling/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

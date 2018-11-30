@@ -6,5 +6,15 @@ title = "Grading by Medium Dave"
 draft = false
 weight = 2
 +++
+<!--more-->
 
-https://mediumdave.tumblr.com/
+# .
+# .
+# .
+# .
+# .
+# .
+# .
+This is a link to Grading by Medium Dave.
+
+# https://mediumdave.tumblr.com/

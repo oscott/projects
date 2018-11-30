@@ -31,7 +31,7 @@ Ten algorithmic sound programs for live software performance based on [electro-f
 10. mount 									    6:53
 11. Side B length variable
 
-Version one was captured onto fourteen sticks and sunk into cork for sale at the following events:   
+Version one was performed live, captured onto fourteen sticks and sunk into cork for sale at the following events:   
 
 [Cardiff](https://www.facebook.com/events/179149349497348/)  
 [London](https://www.facebook.com/events/1775712846066069/)  

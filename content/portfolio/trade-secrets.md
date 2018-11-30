@@ -10,7 +10,7 @@ weight = 1
 Trade Secrets: studies and sketches is a collection of source materials and curated collaboration with popular recommendation engines and everyday internet algorithms.
 
 
-By abstracting artist’s personal data, his everyday behaviour on the internet has been classified as “unpredictable” by Google. The presented work reveals this process and the way it affects the artist’s relationship with technology and with his own data, generating a story of identity being traded in exchange for an enhanced interface to the internet.
+> By abstracting artist’s personal data, his everyday behaviour on the internet has been classified as “unpredictable” by Google. The presented work reveals this process and the way it affects the artist’s relationship with technology and with his own data, generating a story of identity being traded in exchange for an enhanced interface to the internet.
 
 There are 3 elements to the work.
 

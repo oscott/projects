@@ -1,0 +1,31 @@
+<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.cookie.js" | absURL }}"> </script>
+<script src="{{ "js/ekko-lightbox.js" | absURL }}"></script>
+<script src="{{ "js/jquery.scrollTo.min.js" | absURL }}"></script>
+<script src="{{ "js/masonry.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/imagesloaded.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/owl.carousel.min.js" | absURL }}"></script>
+<script src="{{ "js/front.js" | absURL }}"></script>
+<!-- Tipler style -->
+<script type="text/javascript" language="javascript" charset="utf-8">
+function getTransformProperty(element) {
+  var properties = ['transform', 'WebkitTransform', 'MozTransform'];
+  var p;
+  while (p = properties.shift()) {
+      if (typeof element.style[p] != 'undefined') {
+          return p;
+      }
+  }
+
+  return false;
+}
+
+var div = document.getElementById('7');
+var property = getTransformProperty(div);
+
+if (property) {
+  var d = 0;
+  setInterval(function () {div.style[property] = 'rotate(' + (d++ % 360) + 'deg)';}, 1000);
+}
+</script>

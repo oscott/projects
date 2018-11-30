@@ -7,6 +7,11 @@ title = "Notes on Falling"
 weight = 4
 +++
 <!--more-->
+
+An installation of sound and viewing box. (info to follow)
+
+For now...
+
 Intention > Accident > Fear > Surprise > Realisation > Purpose
 
 Driven by excitement + guided by discernment
@@ -27,7 +32,7 @@ Driven by excitement + guided by discernment
 
 
 
-### Readymade crew
+### Special thanks to the Readymade Crew
 
 Natalie Appleton, Nicole Appleton, Gerhard Behles, Melanie Blatt, Mariah Carey, Don DuBose, Geoff Emerick, Tom Evans, Magnus Fiennes, Marlin Greene, Pete Ham, Robert Henke, Quin Ivy, Robert Jazayeri, Peter Jubel, Calvin Lewis, Shaznay Lewis, Jessica Lord, Jim Marr, Sean Mather, Cameron McVey, Paul Nasca, Ernst Nathorst-Böös, Wendy Page, Leian Piper, Andy Puddicombe, Joe Rich, Bernd Roggendorf, Percy Sledge, Sandy Stevenson, Andrew Wright, Marcus Zetterquist.
 

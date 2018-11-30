@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on OS: A selection of projects</title>
+    <title>Categories on A Message:</title>
     <link>https://oscott.github.io/projects/categories/</link>
-    <description>Recent content in Categories on OS: A selection of projects</description>
+    <description>Recent content in Categories on A Message:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018 Kunst Kernewek</copyright>
+    <copyright>&amp;copy; Kunst Kernewek 999-019</copyright>
     
 	<atom:link href="https://oscott.github.io/projects/categories/index.xml" rel="self" type="application/rss+xml" />
     
