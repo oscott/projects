@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service Check</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: left;
+          margin: 200px;
+        }
+        .hidden {
+            display: none;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #finalPageButton {
+  margin-top: 20px;
+}
+#acknowledgment{margin-top: 20px;margin-bottom: 20px;}
+#but {
+  margin-top: 20px;
+  color: lightgray;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Have you agreed to any terms of service or cookies without reading them first?</h1>
+
+    <form id="consentForm">
+        <label><input type="checkbox" id="tickbox1"> I have consented to cookies without reading.</label><br>
+        <label><input type="checkbox" id="tickbox2"> I have agreed to terms of service updates without reading them.</label><br>
+        <label><input type="checkbox" id="tickbox3"> I have allowed services to interact with one another without properly understanding the implication.</label><br>
+        <label><input type="checkbox" id="tickbox4"> I have not opted in to any mass surveillance through an act of my own free will.</label><br>
+    </form>
+
+    <div id="message" class="hidden"></div>
+
+    <div id="acknowledgment" class="hidden">
+        <label><input type="checkbox" id="understandBox"> I understand</label>
+        <div id="but">Please contact the operating system if you require an alternative user agreement. Any reasonable request from a reasonable person who understands Non-Violent Communication and Adler’s Personal Psycology will get a reply and it will likely be ‘yes’.</div>
+
+    </div>
+
+    <button id="finalPageButton" class="hidden">Enter</button>
+
+
+    <script>
+        const tickboxes = [
+            document.getElementById('tickbox1'),
+            document.getElementById('tickbox2'),
+            document.getElementById('tickbox3'),
+        ];
+
+        const tickbox4 = document.getElementById('tickbox4');
+        const understandBox = document.getElementById('understandBox');
+        const messageDiv = document.getElementById('message');
+        const acknowledgmentDiv = document.getElementById('acknowledgment');
+        const finalPageButton = document.getElementById('finalPageButton');
+
+        function updateMessage() {
+            let anyConsentsChecked = tickboxes.some(box => box.checked);
+            let tickbox4Checked = tickbox4.checked;
+
+            if (anyConsentsChecked) {
+                messageDiv.textContent = "You are not welcome to use this service until you have fully understood the implications of the above survey - Have a nice day";
+                messageDiv.classList.remove('hidden');
+                acknowledgmentDiv.classList.add('hidden');
+                finalPageButton.classList.add('hidden');
+            } else if (tickbox4Checked) {
+                messageDiv.textContent = "Well done. You are welcome to enter this website for personal use only. You must not attempt to record, transmit, time shift, republish, capture or store anything emitted through this website URL, it’s content and any code within.";
+                messageDiv.classList.remove('hidden');
+                acknowledgmentDiv.classList.remove('hidden');
+            } else {
+                messageDiv.classList.add('hidden');
+                acknowledgmentDiv.classList.add('hidden');
+                finalPageButton.classList.add('hidden');
+            }
+        }
+
+        function updateFinalButton() {
+            if (understandBox.checked) {
+                finalPageButton.classList.remove('hidden');
+            } else {
+                finalPageButton.classList.add('hidden');
+            }
+        }
+
+        tickboxes.forEach(box => box.addEventListener('change', updateMessage));
+        tickbox4.addEventListener('change', updateMessage);
+        understandBox.addEventListener('change', updateFinalButton);
+
+        // Dummy final page button functionality
+        finalPageButton.addEventListener('click', function() {
+            window.location.href = 'finalpage.html'; // Replace with actual URL
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Check</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: left;
+          margin: 200px;
+        }
+        .hidden {
+            display: none;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #nextPageButton {
+  margin-top: 20px;
+}#foot {
+  margin-top: 100px;
+  color: lightgray;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Have you removed all commercial mass surveillance apps from this device</h1>
+    <p>Please select any of the following you have installed:</p>
+
+    <form id="appForm">
+        <label><input type="checkbox" id="tickbox1"> Pokemon go or Pinterest</label><br>
+        <label><input type="checkbox" id="tickbox2"> Tiktok</label><br>
+        <label><input type="checkbox" id="tickbox3"> Snapchat</label><br>
+        <label><input type="checkbox" id="tickbox4"> Amazon (Prime, Audible, etc)</label><br>
+        <label><input type="checkbox" id="tickbox5"> Meta (WhatsApp, Instagram, Facebook, Marketplace etc)</label><br>
+        <label><input type="checkbox" id="tickbox6"> Google (Google, Youtube, Google maps, gMail, etc)</label><br>
+        <label><input type="checkbox" id="tickbox7"> I have removed all commercial mass surveillance apps from this device</label><br>
+    </form>
+
+    <div id="message" class="hidden"></div>
+    <button id="nextPageButton" class="hidden">Next Page</button>
+    <div id="foot"><h3>Data policy</h3>
+
+    The data entered on this page is stored locally on your device. It is not transmitted or stored anywhere else. On refreshing this page it is supposed to be deleted with no trace, but it is likely that your setting will not allow that.</div>
+
+    <script>
+        const tickboxes = [
+            document.getElementById('tickbox1'),
+            document.getElementById('tickbox2'),
+            document.getElementById('tickbox3'),
+            document.getElementById('tickbox4'),
+            document.getElementById('tickbox5'),
+            document.getElementById('tickbox6'),
+        ];
+
+        const tickbox7 = document.getElementById('tickbox7');
+        const messageDiv = document.getElementById('message');
+        const nextPageButton = document.getElementById('nextPageButton');
+
+        function updateMessage() {
+            let anyAppsChecked = tickboxes.some(box => box.checked);
+            let tickbox7Checked = tickbox7.checked;
+
+            if (anyAppsChecked) {
+                messageDiv.textContent = "You are not welcome to use this service - Have a nice day";
+                messageDiv.classList.remove('hidden');
+                nextPageButton.classList.add('hidden');
+            } else if (tickbox7Checked) {
+                messageDiv.textContent = "Well done. The year is 2024 and these are my terms and conditions. Just one more page of this nonsense before you can enter : )";
+                messageDiv.classList.remove('hidden');
+                nextPageButton.classList.remove('hidden');
+            } else {
+                messageDiv.classList.add('hidden');
+                nextPageButton.classList.add('hidden');
+            }
+        }
+
+        tickboxes.forEach(box => box.addEventListener('change', updateMessage));
+        tickbox7.addEventListener('change', updateMessage);
+
+        // Dummy next page button functionality
+        nextPageButton.addEventListener('click', function() {
+            window.location.href = 'nextpage.html'; // Replace with actual URL
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Stream Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 200px;
+            /* background-image: url("https://www.mbari.org/wp-content/uploads/Spectogram_1.jpg"); */
+            /* background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 100px; */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Final Page with Audio</h1>
+    <p>This page plays a combined audio stream.</p>
+    <audio controls autoplay>
+]     <source src="mfrjrslomont.mp3" type="audio/mpeg">
+   Your browser does not support the audio element.
+   </audio>
+   <audio controls autoplay>
+]     <source src="mfrjrslomontbo.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>    <audio controls autoplay>
+  ]     <source src="HJ.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+     </audio>    <audio controls autoplay>
+     ]     <source src="bec4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <!-- <audio controls="">
+    <source src="https://shoutcast.mbari.org/pacific-soundscape" type="audio/mpeg">
+  </audio> -->
+    <!-- <audio id="audioPlayer" controls></audio> -->
+
+    <script>
+        const audioFiles = [
+            'mfrjrslomont.mp3',
+            'mfrjrslomontbo.mp3',
+            'HJ.mp3'
+        ];
+
+        const shuffledFiles = audioFiles.sort(() => Math.random() - 0.5);
+
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        async function fetchAudioData(url) {
+            const response = await fetch(url);
+            const arrayBuffer = await response.arrayBuffer();
+            return await audioContext.decodeAudioData(arrayBuffer);
+        }
+
+        async function createAudioStream(files) {
+            const sources = await Promise.all(files.map(fetchAudioData));
+
+            const finalBuffer = audioContext.createBuffer(
+                sources[0].numberOfChannels,
+                sources.reduce((acc, buffer) => acc + buffer.length, 0),
+                audioContext.sampleRate
+            );
+
+            let offset = 0;
+            sources.forEach(buffer => {
+                for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
+                    finalBuffer.getChannelData(channel).set(buffer.getChannelData(channel), offset);
+                }
+                offset += buffer.length;
+            });
+
+            const streamSource = audioContext.createBufferSource();
+            streamSource.buffer = finalBuffer;
+            streamSource.connect(audioContext.destination);
+            streamSource.start();
+            audioPlayer.src = audioContext.createMediaStreamSource(streamSource.mediaStream).stream;
+        }
+
+        createAudioStream(shuffledFiles);
+
+        // Optional background audio layer
+        async function createBackgroundLayer(url, volume = 0.5, pan = 0) {
+            const buffer = await fetchAudioData(url);
+            const backgroundSource = audioContext.createBufferSource();
+            backgroundSource.buffer = buffer;
+
+            const gainNode = audioContext.createGain();
+            gainNode.gain.value = volume;
+
+            const panNode = audioContext.createStereoPanner();
+            panNode.pan.value = pan;
+
+            backgroundSource.connect(gainNode).connect(panNode).connect(audioContext.destination);
+            backgroundSource.loop = true;
+            backgroundSource.start();
+        }
+
+        createBackgroundLayer('bec4.mp3', 0.3, -1); // Example with volume and panning
+    </script>
+
+</body>
+</html>
