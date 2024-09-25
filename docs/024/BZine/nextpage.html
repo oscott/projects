@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service Check</title>
+    <title>Terms of Service Check 2/2</title>
     <style>
         body {
           font-family: Arial, sans-serif;
@@ -28,8 +28,8 @@
     </style>
 </head>
 <body>
-Last page before gaining access to the free noises. Thank you for persevering.
-    <h1>Have you agreed to any terms of service or cookies without reading them first?</h1>
+Last page gaining access to noise at no cost. Perseverance thank you.
+    <h1>Have you agreed to any terms of service or cookies without reading them entirely?</h1>
 
     <form id="consentForm">
         <label><input type="checkbox" id="tickbox1"> I have consented to cookies without reading.</label><br>
@@ -93,8 +93,6 @@ Last page before gaining access to the free noises. Thank you for persevering.
         tickboxes.forEach(box => box.addEventListener('change', updateMessage));
         tickbox4.addEventListener('change', updateMessage);
         understandBox.addEventListener('change', updateFinalButton);
-
-        // Dummy final page button functionality
         finalPageButton.addEventListener('click', function() {
             window.location.href = 'finalpage.html'; // Replace with actual URL
         });
