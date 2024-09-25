@@ -27,7 +27,7 @@
 </head>
 <body>
 Before gaining access to noise at no cost, some little 'paperwork' is required. 
-    <h1>Have you removed all commercial mass surveillance apps from this device</h1>
+    <h1>Have you removed all commercial mass surveillance apps from this device?</h1>
     <p>Please select any of the following you have installed:</p>
 
     <form id="appForm">
@@ -44,7 +44,7 @@ Before gaining access to noise at no cost, some little 'paperwork' is required.
     <button id="nextPageButton" class="hidden">Next Page</button>
     <div id="foot"><h3>Data policy</h3>
 
-    The data entered on this page is stored locally on your device. It is not transmitted or stored anywhere else. On refreshing this page it is supposed to be deleted with no trace, but it is likely that your setting will not allow that.</div>
+    The data you enter on this page is temporarily stored on your device and is not shared with anyone else. It is not transmitted or stored elsewhere. You are the only person who will know the answer. When you leave or refresh the page, it should be deleted without a trace. However, your device settings and previous agreements may affect this deletion.</div>
 
     <script>
         const tickboxes = [
@@ -69,7 +69,7 @@ Before gaining access to noise at no cost, some little 'paperwork' is required.
                 messageDiv.classList.remove('hidden');
                 nextPageButton.classList.add('hidden');
             } else if (tickbox7Checked) {
-                messageDiv.textContent = "Welcome. Well done. In year 2024 these are my terms and conditions. You must one more page annoying before enter : )";
+                messageDiv.textContent = "Welcome. Well done. In year 2024 these are my terms and conditions. You must one more page annoying before enter.";
                 messageDiv.classList.remove('hidden');
                 nextPageButton.classList.remove('hidden');
             } else {
