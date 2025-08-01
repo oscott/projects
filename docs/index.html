@@ -4,10 +4,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>A selection of works by Oliver Scott </title>
+	  <style>
+		body {
+                transition: filter 60s ease;
+            }
+            .blurred {
+                filter: blur(100px) brightness(0.9);
+            }
+            #trigger {
+                cursor: pointer;
+                display: inline-block;
+                padding: 0;
+                border: 0px solid black;
+                margin-top: 0;
+            }
+            #trigger:hover {
+                background: #000;
+                color: #fff;
+            }
+        </style>
   </head>
 <body>
 <pre>
-| Works by Oliver Scott                                                                                                                                                      <!-- you might use 'find in page' or another algorithm to search this page -->
+| Works by Oliver Scott  Text is the default, but not natural for everyone. Most of this page prior to July 2025 is discussed in a podcast. <div id="trigger">▶ Listen</div> <!-- you might use 'find in page' or another algorithm to search this page -->
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |      Penryn
 | <span style="opacity:30%">2025 System System </span><span style="color:darkgray">Let me know if your interested.</span>
@@ -107,5 +126,26 @@
 <span style="display: inline-block;transform: rotate(-90deg);font-family: fantasy;position: relative;top: -2px;"> ©</span>notice: My current stance remains as usual - upon encountering (using) my work, you enter into a strict user agreement. As soon as you engage with the work, you acknowledge that you are processing symbols of our combined reality, created through effort, both on your part and mine. Therefore, I believe it essential for us to discuss any outcomes of this relationship, before they develop further, to ensure this realtionship remains manageable. Please let me know if we have entered into any form of collaboration through my works, whether physically, mentally, or through the act of sharing. It is a duty we owe to each other and any other entities involved. I consider myself approachable and open-minded regarding collaboration. I am available to discuss this further.
 </pre>                                                                                                                                                                                                                                                 
 <!-- <a href="https://www.websitecarbon.com/website/os-koe-pt/">This websites carbon footprint is carbonkers.</a> -->
+	        <script>
+            document
+                .getElementById("trigger")
+                .addEventListener("click", function () {
+                    // Prevent multiple clicks
+                    this.style.pointerEvents = "none";
+
+                    // Feedback: blur the page
+                    document.body.classList.add("blurred");
+
+                    // Dynamically load the audio
+                    const audio = new Audio(
+                        "https://github.com/oscott/projects/raw/refs/heads/master/docs/audio/Oliver_Scott_s_Art__From_Cassettes_to_MRIs_and_the__Strict_User_Agreement_.m4a",
+                    );
+                    audio.play().catch((e) => {
+                        alert("Autoplay blocked. Try clicking again.");
+                        document.body.classList.remove("blurred");
+                        this.style.pointerEvents = "auto";
+                    });
+                });
+        </script>
 </body>
 </html>
