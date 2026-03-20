@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strobe Meditation</title>
+</head>
+
+<body style="margin:0; background:black;">
+
+<script>
+// ===============================
+// USER SETTINGS
+// ===============================
+
+// Base frequency in Hz (flashes per second)
+let baseFrequency = 6;
+
+// How much the frequency drifts (+/- this value)
+let driftAmount = 1.5;
+
+// How fast the drift happens (larger = slower changes)
+let driftSpeed = 4000;
+
+
+// ===============================
+// INTERNAL STATE
+// ===============================
+
+// Current background state (0 = black, 1 = white)
+let state = 0;
+
+// Last time we flipped (ms timestamp)
+let lastToggleTime = 0;
+
+
+// ===============================
+// MAIN LOOP (runs every frame)
+// ===============================
+
+function animate(currentTime) {
+
+  // Calculate a gently drifting frequency using a sine wave
+  let drift = Math.sin(currentTime / driftSpeed) * driftAmount;
+
+  // Final frequency = base + drift
+  let frequency = baseFrequency + drift;
+
+  // Convert frequency → time per half-cycle (on/off)
+  let interval = 1000 / (frequency * 2);
+
+  // If enough time has passed, flip the screen
+  if (currentTime - lastToggleTime > interval) {
+    
+    // Toggle between 0 and 1
+    state = state ^ 1;
+
+    // Apply color
+    document.body.style.background = state ? "white" : "black";
+
+    // Update last toggle time
+    lastToggleTime = currentTime;
+  }
+
+  // Keep looping
+  requestAnimationFrame(animate);
+}
+
+// Start the loop
+requestAnimationFrame(animate);
+
+</script>
+
+</body>
+</html>
