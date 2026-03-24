@@ -5,7 +5,6 @@
 <title>Strobe Meditation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-
 <link rel="manifest" href="./manifest.json">
 
 <style>
@@ -30,8 +29,8 @@ html, body {
 }
 </style>
 </head>
-
 <body>
+
 <div id="start">Tap to begin</div>
 
 <script>
@@ -63,20 +62,29 @@ async function keepAwake() {
 let state = 0;
 let lastTime = 0;
 
-const minFreq = 6;   // Hz
-const maxFreq = 11;  // Hz
+// Frequency fluctuation parameters
+const minFreq = 6;      // Hz
+const maxFreq = 11;     // Hz
 const cycleDuration = 30000; // 30s full cycle
+const minInterval = 16; // Minimum interval ~1 frame at 60Hz
 
 function strobeLoop(timestamp) {
-  // Time-based sine fluctuation 6-11 Hz
+  // Smooth sinusoidal frequency fluctuation between minFreq and maxFreq
   const normalized = (timestamp % cycleDuration) / cycleDuration;
   const freq = minFreq + (maxFreq - minFreq) * (0.5 + 0.5 * Math.sin(normalized * 2 * Math.PI));
-  const interval = 1000 / (freq * 2);
+
+  // Compute half-cycle interval (on/off)
+  let interval = 1000 / (freq * 2);
+
+  // Clamp to minimum 16ms to prevent frame skipping
+  interval = Math.max(interval, minInterval);
 
   if (timestamp - lastTime > interval) {
     state ^= 1;
     document.body.style.background = state ? "#fff" : "#000";
-    lastTime = timestamp;
+
+    // Add interval to lastTime instead of setting timestamp to avoid losing frames
+    lastTime += interval;
   }
 
   requestAnimationFrame(strobeLoop);
@@ -91,5 +99,6 @@ document.getElementById('start').addEventListener('click', async () => {
   requestAnimationFrame(strobeLoop); // start strobe
 });
 </script>
+
 </body>
 </html>
