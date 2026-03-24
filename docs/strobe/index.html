@@ -90,7 +90,7 @@ function animate(currentTime) {
 
 // Start the loop
 requestAnimationFrame(animate);
-
+alert(window.navigator.standalone);
 </script>
 <div id="start" style="
   position:fixed;
@@ -110,6 +110,8 @@ document.getElementById("start").onclick = async () => {
   document.getElementById("start").style.display = "none";
   await keepScreenAwake();
 };
+
+  
 </script>
 </body>
 </html>
