@@ -9,7 +9,27 @@
 </head>
 
 <body style="margin:0; background:black;">
+<script>
+let wakeLock = null;
 
+async function keepScreenAwake() {
+  try {
+    wakeLock = await navigator.wakeLock.request('screen');
+    console.log('Wake lock active');
+
+    // Re-acquire if lost (e.g. switching tabs)
+    wakeLock.addEventListener('release', () => {
+      console.log('Wake lock released');
+    });
+
+  } catch (err) {
+    console.log('Wake lock failed:', err);
+  }
+}
+
+// Must be triggered by user interaction on many devices
+document.addEventListener('click', keepScreenAwake);
+</script>
 <script>
 // ===============================
 // USER SETTINGS
