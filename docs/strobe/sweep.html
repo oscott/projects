@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Strobe Meditation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+let state = 0;
+let last = 0;
+
+// Frequency settings
+let minFreq = 6;       // Hz
+let maxFreq = 11;      // Hz
+let cycleDuration = 30000; // 30 seconds per full fluctuation
+
+function loop(t) {
+  // Calculate normalized time in cycle [0, 1]
+  let normalized = (t % cycleDuration) / cycleDuration;
+
+  // Use sine wave to smoothly fluctuate between minFreq and maxFreq
+  let freq = minFreq + (maxFreq - minFreq) * (0.5 + 0.5 * Math.sin(normalized * 2 * Math.PI));
+
+  let interval = 1000 / (freq * 2); // half-cycle for on/off
+
+  if (t - last > interval) {
+    state ^= 1;
+    document.body.style.background = state ? "#fff" : "#000";
+    last = t;
+  }
+
+  requestAnimationFrame(loop);
+}
+
+// Start the strobe loop
+requestAnimationFrame(loop);
+</script>
+
+</body>
+</html>
