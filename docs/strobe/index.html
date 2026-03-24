@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Strobe Meditation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
+<meta charset="UTF-8">
+<title>Strobe Meditation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
 
-  <link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="./manifest.json">
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: black;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #start {
-      position: fixed;
-      inset: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 24px;
-      background: black;
-    }
-  </style>
+<style>
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#start {
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  color:white;
+  background:black;
+}
+</style>
 </head>
 
 <body>
-
 <div id="start">Tap to begin</div>
 
 <script>
-// ==========================
+// ----------------------------
 // SERVICE WORKER
-// ==========================
+// ----------------------------
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/strobe/sw.js')
-    .then(() => console.log("Service worker registered"))
-    .catch(err => console.log("SW failed:", err));
+    .then(() => console.log('Service worker registered'))
+    .catch(e => console.log('SW failed:', e));
 }
 
-// ==========================
-// WAKE LOCK (ANDROID)
-// ==========================
+// ----------------------------
+// WAKE LOCK (Android)
+// ----------------------------
 let wakeLock = null;
 async function keepAwake() {
   try {
@@ -59,44 +57,39 @@ async function keepAwake() {
   }
 }
 
-// ==========================
-// DYNAMIC STROBE ENGINE
-// ==========================
+// ----------------------------
+// STROBE SETTINGS
+// ----------------------------
 let state = 0;
-let last = 0;
+let lastTime = 0;
 
-// Frequency fluctuation settings
-let minFreq = 6;          // Hz
-let maxFreq = 11;         // Hz
-let cycleDuration = 30000; // 30 seconds per full fluctuation
+const minFreq = 6;   // Hz
+const maxFreq = 11;  // Hz
+const cycleDuration = 30000; // 30s full cycle
 
-function strobeLoop(t) {
-  // Normalized progress through 30s cycle
-  let normalized = (t % cycleDuration) / cycleDuration;
+function strobeLoop(timestamp) {
+  // Time-based sine fluctuation 6-11 Hz
+  const normalized = (timestamp % cycleDuration) / cycleDuration;
+  const freq = minFreq + (maxFreq - minFreq) * (0.5 + 0.5 * Math.sin(normalized * 2 * Math.PI));
+  const interval = 1000 / (freq * 2);
 
-  // Sine wave fluctuation between minFreq and maxFreq
-  let freq = minFreq + (maxFreq - minFreq) * (0.5 + 0.5 * Math.sin(normalized * 2 * Math.PI));
-
-  let interval = 1000 / (freq * 2); // half-cycle
-
-  if (t - last > interval) {
+  if (timestamp - lastTime > interval) {
     state ^= 1;
     document.body.style.background = state ? "#fff" : "#000";
-    last = t;
+    lastTime = timestamp;
   }
 
   requestAnimationFrame(strobeLoop);
 }
 
-// ==========================
-// START HANDLER
-// ==========================
-document.getElementById("start").onclick = async () => {
-  await keepAwake();                  // Attempt wake lock
-  document.getElementById("start").style.display = "none"; // Hide overlay
-  requestAnimationFrame(strobeLoop);  // Start strobe
-};
+// ----------------------------
+// START BUTTON HANDLER
+// ----------------------------
+document.getElementById('start').addEventListener('click', async () => {
+  await keepAwake(); // wake lock
+  document.getElementById('start').style.display = 'none'; // hide overlay
+  requestAnimationFrame(strobeLoop); // start strobe
+});
 </script>
-
 </body>
 </html>
