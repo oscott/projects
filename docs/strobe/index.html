@@ -2,14 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-
-  <!-- Mobile + PWA config -->
+  <title>Strobe Meditation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
 
   <link rel="manifest" href="./manifest.json">
-
-  <title>Strobe</title>
 
   <style>
     html, body {
@@ -17,14 +14,17 @@
       padding: 0;
       background: black;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #start {
       position: fixed;
       inset: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       color: white;
       font-size: 24px;
       background: black;
@@ -50,7 +50,6 @@ if ('serviceWorker' in navigator) {
 // WAKE LOCK (ANDROID)
 // ==========================
 let wakeLock = null;
-
 async function keepAwake() {
   try {
     wakeLock = await navigator.wakeLock.request('screen');
@@ -61,20 +60,24 @@ async function keepAwake() {
 }
 
 // ==========================
-// STROBE ENGINE (stable + drift)
+// DYNAMIC STROBE ENGINE
 // ==========================
 let state = 0;
 let last = 0;
 
-let baseFreq = 4;
-let driftAmount = 1.5;
-let driftSpeed = 4000;
+// Frequency fluctuation settings
+let minFreq = 6;          // Hz
+let maxFreq = 11;         // Hz
+let cycleDuration = 30000; // 30 seconds per full fluctuation
 
-function loop(t) {
-  let drift = Math.sin(t / driftSpeed) * driftAmount;
-  let freq = baseFreq + drift;
+function strobeLoop(t) {
+  // Normalized progress through 30s cycle
+  let normalized = (t % cycleDuration) / cycleDuration;
 
-  let interval = 1000 / (freq * 2);
+  // Sine wave fluctuation between minFreq and maxFreq
+  let freq = minFreq + (maxFreq - minFreq) * (0.5 + 0.5 * Math.sin(normalized * 2 * Math.PI));
+
+  let interval = 1000 / (freq * 2); // half-cycle
 
   if (t - last > interval) {
     state ^= 1;
@@ -82,24 +85,17 @@ function loop(t) {
     last = t;
   }
 
-  requestAnimationFrame(loop);
+  requestAnimationFrame(strobeLoop);
 }
 
 // ==========================
-// START HANDLER (SAFE)
+// START HANDLER
 // ==========================
 document.getElementById("start").onclick = async () => {
-
-  // Try wake lock (won't break if it fails)
-  await keepAwake();
-
-  // Hide overlay
-  document.getElementById("start").style.display = "none";
-
-  // Start strobe
-  requestAnimationFrame(loop);
+  await keepAwake();                  // Attempt wake lock
+  document.getElementById("start").style.display = "none"; // Hide overlay
+  requestAnimationFrame(strobeLoop);  // Start strobe
 };
-
 </script>
 
 </body>
