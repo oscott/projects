@@ -41,7 +41,9 @@
 // SERVICE WORKER
 // ==========================
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/projects/strobe/sw.js');
+  navigator.serviceWorker.register('/strobe/sw.js')
+    .then(() => console.log("Service worker registered"))
+    .catch(err => console.log("SW failed:", err));
 }
 
 // ==========================
