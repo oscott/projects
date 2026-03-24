@@ -92,6 +92,24 @@ function animate(currentTime) {
 requestAnimationFrame(animate);
 
 </script>
+<div id="start" style="
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:black;
+  color:white;
+  font-size:24px;
+">
+  Tap to begin
+</div>
 
+<script>
+document.getElementById("start").onclick = async () => {
+  document.getElementById("start").style.display = "none";
+  await keepScreenAwake();
+};
+</script>
 </body>
 </html>
