@@ -1,121 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile + PWA config -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+
   <link rel="manifest" href="./manifest.json">
-  <title>Strobe Meditation</title>
+
+  <title>Strobe</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+    }
+
+    #start {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      background: black;
+    }
+  </style>
 </head>
 
-<body style="margin:0; background:black;">
+<body>
+
+<div id="start">Tap to begin</div>
+
 <script>
+// ==========================
+// SERVICE WORKER
+// ==========================
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/projects/strobe/sw.js');
+}
+
+// ==========================
+// WAKE LOCK (ANDROID)
+// ==========================
 let wakeLock = null;
 
-async function keepScreenAwake() {
+async function keepAwake() {
   try {
     wakeLock = await navigator.wakeLock.request('screen');
-    console.log('Wake lock active');
-
-    // Re-acquire if lost (e.g. switching tabs)
-    wakeLock.addEventListener('release', () => {
-      console.log('Wake lock released');
-    });
-
-  } catch (err) {
-    console.log('Wake lock failed:', err);
+    console.log("Wake lock active");
+  } catch (e) {
+    console.log("Wake lock failed:", e);
   }
 }
 
-// Must be triggered by user interaction on many devices
-document.addEventListener('click', keepScreenAwake);
-</script>
-<script>
-// ===============================
-// USER SETTINGS
-// ===============================
+// ==========================
+// STROBE ENGINE (stable + drift)
+// ==========================
+let state = 0;
+let last = 0;
 
-// Base frequency in Hz (flashes per second)
-let baseFrequency = 6;
-
-// How much the frequency drifts (+/- this value)
+let baseFreq = 6;
 let driftAmount = 1.5;
-
-// How fast the drift happens (larger = slower changes)
 let driftSpeed = 4000;
 
+function loop(t) {
+  let drift = Math.sin(t / driftSpeed) * driftAmount;
+  let freq = baseFreq + drift;
 
-// ===============================
-// INTERNAL STATE
-// ===============================
+  let interval = 1000 / (freq * 2);
 
-// Current background state (0 = black, 1 = white)
-let state = 0;
-
-// Last time we flipped (ms timestamp)
-let lastToggleTime = 0;
-
-
-// ===============================
-// MAIN LOOP (runs every frame)
-// ===============================
-
-function animate(currentTime) {
-
-  // Calculate a gently drifting frequency using a sine wave
-  let drift = Math.sin(currentTime / driftSpeed) * driftAmount;
-
-  // Final frequency = base + drift
-  let frequency = baseFrequency + drift;
-
-  // Convert frequency → time per half-cycle (on/off)
-  let interval = 1000 / (frequency * 2);
-
-  // If enough time has passed, flip the screen
-  if (currentTime - lastToggleTime > interval) {
-    
-    // Toggle between 0 and 1
-    state = state ^ 1;
-
-    // Apply color
-    document.body.style.background = state ? "white" : "black";
-
-    // Update last toggle time
-    lastToggleTime = currentTime;
+  if (t - last > interval) {
+    state ^= 1;
+    document.body.style.background = state ? "#fff" : "#000";
+    last = t;
   }
 
-  // Keep looping
-  requestAnimationFrame(animate);
+  requestAnimationFrame(loop);
 }
 
-// Start the loop
-requestAnimationFrame(animate);
-  
-</script>
-<div id="start" style="
-  position:fixed;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:black;
-  color:white;
-  font-size:24px;
-">
-  Tap to begin
-</div>
-
-<script>
+// ==========================
+// START HANDLER (SAFE)
+// ==========================
 document.getElementById("start").onclick = async () => {
+
+  // Try wake lock (won't break if it fails)
+  await keepAwake();
+
+  // Hide overlay
   document.getElementById("start").style.display = "none";
-  await keepScreenAwake();
+
+  // Start strobe
+  requestAnimationFrame(loop);
 };
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js');
-}
+
 </script>
-  
-</script>
+
 </body>
 </html>
