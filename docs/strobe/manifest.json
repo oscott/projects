@@ -1,8 +1,8 @@
 {
   "name": "Strobe Meditation",
   "short_name": "Strobe",
-  "start_url": "/projects/strobe/",
-  "scope": "/projects/strobe/",
+  "start_url": "/strobe/",
+  "scope": "/strobe/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
